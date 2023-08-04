@@ -5,7 +5,7 @@ metadata:
    name: mypod
 spec:
    containers:
-   - name: newcon
-     image: westuser/newansimg:latest
+   - name: myanscon
+     image: westuser/ansimg:latest
      ports:
      - containerPort: 80
