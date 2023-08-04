@@ -1,22 +1,11 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Pod
 metadata:
-  name: mydeploy
-  namespace: dev
-  labels:
-    app: web
+   namespace: dev
+   name: mypod
 spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: web
-  template:
-    metadata:
-      labels:
-        app: web
-    spec:
-      containers:
-      - name: mynewcon
-        image: westuser/newansimg:latest
-        ports:
-        - containerPort: 80
+   containers:
+   - name: newcon
+     image: westuser/newansimg:latest
+     ports:
+     - containerPort: 80
