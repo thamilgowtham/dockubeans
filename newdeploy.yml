@@ -6,6 +6,6 @@ metadata:
 spec:
    containers:
    - name: myanscon
-     image: westuser/ansimg:latest
+     image: westuser/newkubeimg:latest
      ports:
      - containerPort: 80
